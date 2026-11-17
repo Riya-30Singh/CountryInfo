@@ -1,0 +1,139 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f877e0, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    background: rgb(189, 222, 245);
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+header h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #777;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.search-box input:focus {
+    border-color: #0d2bb0;
+}
+
+.search-box button {
+    padding: 13px 20px;
+    background: #0f2eb4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: #5266d5;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#result img {
+    width: 180px;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+}
+
+#result h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.country-details {
+    text-align: left;
+    background: #f5f6ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.country-details p {
+    margin: 14px 0;
+    color: #444;
+    font-size: 15px;
+}
+
+.country-details strong {
+    color: #333;
+}
+
+.error {
+    color: #e53935;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        padding: 22px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+    #result img {
+        width: 150px;
+        height: 100px;
+    }
+}
